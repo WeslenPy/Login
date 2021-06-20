@@ -19,7 +19,7 @@ class LoginMain(QtWidgets.QMainWindow):
 
         self.lb_Message = QtWidgets.QLabel('Usuario Ou Senha Incorreto.',self.loginWidget)
         self.btn_Message  = QtWidgets.QToolButton(self.loginWidget)
-        self.btn_Message.setIcon(QtGui.QIcon('Icons/ICONS_16/x_close.png'))
+        self.btn_Message.setIcon(QtGui.QIcon('Icons/x_close.png'))
         self.btn_Message.setIconSize(QtCore.QSize(7,7))
 
         self.lb_Message.setAlignment(QtCore.Qt.AlignCenter)
