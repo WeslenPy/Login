@@ -92,10 +92,9 @@ class LoginMain(QtWidgets.QMainWindow):
 
         self.cb_users.setStyleSheet('''
         QComboBox{border:None;border-radius:12px;background-color:#595959;color:white;padding-left:%s px;}
-        QComboBox:drop-down{border:0px solid;border-radius:10px;image:url(Icons/ICONS_16/drop2.png);padding-top:4px;margin-top:2px;margin-right:3px;}
+        QComboBox:drop-down{border:0px solid;border-radius:10px;image:url(Icons/drop2.png);padding-top:4px;margin-top:2px;margin-right:3px;}
         QComboBox:drop-down:hover {background:#22c1c3;border:None;}
         QComboBox QAbstractItemView{max-width:200px;min-height:15px;padding-top:5px;padding-left:%s px;padding-bottom:3px;background-color:#404040;color:white;border-radius:10px;selection-background-color:#404040;outline:0px;}
-        QComboBox QAbstractItemView:hover{selection-background-color:red;}
         ''' % (int(90- len(self.cb_users.currentText())), int(87- len(self.cb_users.currentText()))) )
 
         print(self.cb_users.currentText())
