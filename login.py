@@ -44,10 +44,6 @@ class LoginMain(QtWidgets.QMainWindow):
 
         self.btn_Message.clicked.connect(lambda:self.Animation(rever=True))
 
-        
-        # self.frameIcon = QtWidgets.QFrame(self.frameLogin)
-        # self.frameIcon.setStyleSheet("QFrame{background-image:url('Icons/ICONS_16/userIcon.png');background-repeat:no-repeat;background-position:center;}")
-
         self.layoutVertical = QtWidgets.QVBoxLayout(self.loginWidget)
         self.layoutHLogin = QtWidgets.QHBoxLayout(self.frameCenter)
         self.layoutHTop = QtWidgets.QHBoxLayout(self.frameTop)
@@ -86,9 +82,8 @@ class LoginMain(QtWidgets.QMainWindow):
 
     def Form(self,width):
 
-        # self.Select_Users()
         self.IconTp = QtWidgets.QLabel(self.frameLogin)
-        self.IconTp.setPixmap(QtGui.QPixmap('Icons/ICONS_16/user4.png'))
+        self.IconTp.setPixmap(QtGui.QPixmap('Icons/user4.png'))
 
         self.cb_users = QtWidgets.QComboBox(self.frameLogin)
 
@@ -107,7 +102,6 @@ class LoginMain(QtWidgets.QMainWindow):
 
         self.cb_users.setMaxVisibleItems(3)
 
-
         self.cb_users.resize(width,28)
         self.cb_users.setMaximumWidth(200)
 
@@ -123,8 +117,6 @@ class LoginMain(QtWidgets.QMainWindow):
         self.et_senha.setFocus()
 
         self.et_senha.setPlaceholderText('Senha')
-
-        # self.et_senha.returnPressed.connect(self.Verify_User_Pass)
 
         self.et_senha.setEchoMode(QtWidgets.QLineEdit.Password)
 
