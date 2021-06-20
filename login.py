@@ -142,8 +142,6 @@ class LoginMain(QtWidgets.QMainWindow):
 
         self.et_senha.setPlaceholderText('Senha')
 
-        # self.et_senha.returnPressed.connect(self.Verify_User_Pass)
-
         self.et_senha.setEchoMode(QtWidgets.QLineEdit.Password)
 
         self.et_senha.resize(width,28)
